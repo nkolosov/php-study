@@ -23,6 +23,6 @@ CREATE TABLE IF NOT EXISTS `lots` (
     `date_created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `end_date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `user_id` int(11) NOT NULL,
-    FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
+    FOREIGN KEY (`user_id`) REFERENCES users (`id`)
 )
 
